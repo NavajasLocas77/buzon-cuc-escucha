@@ -2,52 +2,67 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: #f4f6f9;
-  color: #333;
-  padding: 2rem;
+  background: linear-gradient(135deg, #eef2f7 0%, #dbe5ee 100%);
+  color: #1e293b;
+  min-height: 100vh;
+  padding: 2.5rem 1rem;
 }
 
 .container {
-  max-width: 600px;
+  max-width: 620px;
   margin: 0 auto;
   background: #ffffff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-header {
-  margin-bottom: 1.5rem;
-  text-align: center;
+header h1 {
+  color: #c8102e;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #64748b;
+  font-size: 0.95rem;
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 label {
   display: block;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #334155;
 }
 
 input, select, textarea {
   width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 0.8rem;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.95rem;
 }
 
 button {
   width: 100%;
-  padding: 0.75rem;
-  background-color: #004b87;
-  color: white;
+  padding: 0.85rem;
+  background-color: #c8102e;
+  color: #ffffff;
+  font-weight: bold;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #a00c24;
 }
