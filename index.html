@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buzón CUC Escucha</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Buzón CUC Escucha</h1>
+      <p>Espacio para registrar tus sugerencias, ideas y mejoras institucionales.</p>
+    </header>
+
+    <form id="buzon-form">
+      <div class="form-group">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="correo">Correo institucional:</label>
+        <input type="email" id="correo" name="correo" required>
+      </div>
+
+      <div class="form-group">
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria" required>
+          <option value="bienestar">Bienestar</option>
+          <option value="servicios">Servicios</option>
+          <option value="clases">Clases</option>
+          <option value="espacios">Espacios físicos</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Sugerencia o comentario:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      </div>
+
+      <button type="submit">Enviar sugerencia</button>
+    </form>
+  </main>
+</body>
+</html>
